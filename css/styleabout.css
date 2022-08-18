@@ -120,10 +120,10 @@
 }
 .parallax {
     /* The image used */
-    background-image: url("../image/pexels-pixabay-276528.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.623)),url(../image/pexels-pixabay-276528.jpg);
   
     /* Set a specific height */
-    min-height: 400px; 
+    min-height: 500px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -137,24 +137,72 @@
     position: relative;
     color: white;
     left: 400px;
-    top:100px;
+    top:70px;
+    font-size: 50px;
 }
 
 .stats{
-    top:140px;
-    width: 78%;
-    left: 400px;
-    margin: 0;
+    top:130px;
+    width: 50%;
+    left: 500px;
     position:relative;
-    padding: 0px;
     display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(4,1fr)
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
 }
 
 .fa-bath{
+    color: white;
+    font-size: 50px;
 
 }
+
+.fa-couch{
+    color: white;
+    font-size: 50px;
+}
+.fa-chair{
+    color: white;
+    font-size: 50px;
+}
+.fa-bed{
+    color: white;
+    font-size: 50px;
+}
+
+.box{
+    position: relative;
+    top:15px;
+    border-style: solid;
+    border: 1;
+    border-color: white;
+    height: 30px;
+    text-align: center;
+    color: white;
+    right:80px;
+    font-size: 22px;
+    border-width: 2px;
+
+}
+.item{
+    top:25px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 25px;
+    right: 50px;
+}
+.stats hr{
+    position: relative;
+    top:25px; 
+    width: 110px; 
+    background-color: white;
+     height: 2px;
+     border-style: solid;
+      border-color: white;
+}
+
+
+
 .history{
     margin-bottom: 200px;
     top:50px;
@@ -208,6 +256,5 @@
 .footer p{
     color: white;
 }
-
 
 
