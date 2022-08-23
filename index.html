@@ -7,8 +7,33 @@
     <link rel = "stylesheet" href="css/styleindex.css">
     <script src="https://kit.fontawesome.com/3ea7681dea.js" crossorigin="anonymous"></script>
     <title>furniture</title>
+    <script>
+        function displayTime(){
+    var dateTime = new Date();
+    var hrs = dateTime.getHours();
+    var min = dateTime.getMinutes();
+    var sec = dateTime.getSeconds();
+    var session = document.getElementById('session');
+
+    if(hrs >= 12){
+        session.innerHTML = 'PM';
+    }else{
+        session.innerHTML = 'AM';
+    }
+
+    if(hrs > 12){
+        hrs = hrs - 12;
+    }
+
+    document.getElementById('hours').innerHTML = hrs;
+    document.getElementById('minutes').innerHTML = min;
+    document.getElementById('seconds').innerHTML = sec;
+}
+setInterval(displayTime, 10);
+    </script>
 </head>
 <body>
+    <a id = "top"></a>
     <div class="banner">
         <div class="navbar">
             <img src = "image/aayush_logo.png" class="logo">
@@ -29,6 +54,15 @@
             </div>
 
         </div>
+
+    </div>
+    <div class="container">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="session">AM</span>
     </div>
         <div class="pic">
 
@@ -84,6 +118,7 @@
                             <li><a href = "project.html">Project</a></li>
                             <li><a href = "services.html">Our Services</a></li>
                             <li><a href = "contact.html">Contact Us</a></li>
+                            <li style="color: white;"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a> Back to top</li>
                         </ul>
                     </div>
                 </div>
